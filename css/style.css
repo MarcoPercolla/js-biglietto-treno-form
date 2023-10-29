@@ -14,3 +14,11 @@ body {
 h1 {
     background: red;
 }
+
+.container {
+    padding: 1.5rem;
+    background-color: rgb(166, 0, 0);
+    border-radius: 3rem;
+    margin-bottom: 3rem;
+}
+

@@ -15,24 +15,72 @@
 <body>
 
     <main>
-        <form class="row">
-            <input id="distance" type="number">
-            <div class="input-group mb-3">
-                <label class="input-group-text" for="eta">Options</label>
-                <select class="form-select" id="eta">
-                    <option selected value="0">Choose...</option>
-                    <option value="1">minorenne</option>
-                    <option value="2">maggiorenne</option>
-                    <option value="3">over 65</option>
-                </select>
+        <form class="container">
+            <h2>Inserisci i dati per il tuo biglietto.</h2>
+            <div class="row mb-4">
+                <div class="col-6">
+                    <label class="myInputGroup" for="name">nome: </label>
+                    <input id="name" type="text" class="w-100" >
+                </div>
 
-            </div>
-            <input id="mioBottone" type="button">
+                <div class="col-6">
+                    <label class="myInputGroup" for="surname">cognome: </label>
+                    <input id="surname" type="text" class="w-100" >
+                </div>
+                
+                <div class="col-6">
+                    <label class="myInputGroup" for="distance">km da percorrere: </label>
+                    <input id="distance" type="number" class="w-100" >
+                </div>
+                <div class="col-6">
+                    <label class="myInputGroup" for="eta">Età: </label>
+                    <select class="w-100" id="eta">
+                        <option selected value="0">Choose...</option>
+                        <option value="1">minorenne</option>
+                        <option value="2">maggiorenne</option>
+                        <option value="3">over 65</option>
+                    </select>
 
+                </div>
+            </div> 
+            <div class="row d-flex justify-content-center ">  
+                <button id="mioBottone" type="button" class="btn btn-dark col-4"> submit </button>
+            </div> 
         </form>
+        
+        <h4 id="priceError"></h4>
+        <h4 id="scontoError"></h4>
 
-        <h1 id="price"></h1>
-        <h2 id="sconto"></h2>
+        <div id="ticket" class="container d-none">
+            <h2>Il tuo Biglietto:</h2>
+            <div class="card">
+                <h5 class="card-header">Dettaglio passeggeri</h5>
+                <div class="card-body">
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">nome passeggero</th>
+                            <th scope="col">Offerta</th>
+                            <th scope="col">carrozza</th>
+                            <th scope="col">codice CP</th>
+                            <th scope="col">prezzo</th>
+                            <th scope="col">fixed</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row" id="nameTicket"></th>
+                            <td id="discount"></td>
+                            <td>14A</td>
+                            <td>748395</td>
+                            <td id="price"></td>
+                            <td id="sconto"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+        </div>
     </main>
 
     <script src="js/main.js"></script>
