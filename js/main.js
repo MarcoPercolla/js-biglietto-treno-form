@@ -1,6 +1,7 @@
 let distanceInput = document.querySelector("#distance");
 let etaInput = document.querySelector("#eta");
 let btn = document.querySelector("#mioBottone");
+let btn2 = document.querySelector("#mioBottone2");
 let nameInput= document.querySelector("#name");
 let surnameInput= document.querySelector("#surname");
 const ticket = document.querySelector("#ticket");
@@ -19,7 +20,7 @@ btn.addEventListener("click", function(){
         ticket.classList.remove("d-none");
         error1.classList.add("d-none");
         error2.classList.add("d-none");
-        
+        errorContainer.classList.add("d-none");
 
         let prezzo = (distanceValue * 0.21 );
         document.getElementById("nameTicket").innerHTML = `${username} `;
@@ -44,12 +45,14 @@ btn.addEventListener("click", function(){
             ticket.classList.add("d-none");
             error1.classList.remove("d-none");
             error2.classList.remove("d-none");
+            errorContainer.classList.remove("d-none");
             document.getElementById("priceError").innerHTML = `seleziona una tariffa valida`;
             document.getElementById("scontoError").innerHTML = ` seleziona una tariffa `
         }else{
             ticket.classList.add("d-none");
             error1.classList.remove("d-none");
             error2.classList.remove("d-none");
+            errorContainer.classList.remove("d-none");
             document.getElementById("scontoError").innerHTML = ` errore 404`
         }
     
@@ -57,6 +60,7 @@ btn.addEventListener("click", function(){
         ticket.classList.add("d-none");
         error1.classList.remove("d-none");
         error2.classList.remove("d-none");
+        errorContainer.classList.remove("d-none");
         console.log=("errore");
         document.getElementById("priceError").innerHTML = `seleziona una distanza valida`;
         document.getElementById("scontoError").innerHTML = ` errore distanza inferiore a 1 `
@@ -65,6 +69,7 @@ btn.addEventListener("click", function(){
         ticket.classList.add("d-none");
         error1.classList.remove("d-none");
         error2.classList.remove("d-none");
+        errorContainer.classList.remove("d-none");
         console.log=("errore");
         document.getElementById("priceError").innerHTML = `accertati di aver selezionato sia la tariffa che il chilometraggio, grazie`;
         document.getElementById("scontoError").innerHTML = ` error 404 `
@@ -75,3 +80,15 @@ btn.addEventListener("click", function(){
 
 })
 
+btn2.addEventListener("click", function(){
+    ticket.classList.add("d-none");
+    error1.classList.add("d-none");
+    error2.classList.add("d-none");
+    errorContainer.classList.add("d-none");
+    distanceInput.value = "";
+    nameInput.value = "";
+    surnameInput.value = "";
+    etaInput.value= "0";
+    
+
+})
