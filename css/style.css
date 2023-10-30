@@ -43,3 +43,10 @@ h1 {
     border-radius: 0.5rem;
     
 }
+
+#errorContainer {
+    background: url(https://files.brumbrum.it/blog/wp-content/uploads/2020/02/10130045/Passaggio-a-livello.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
