@@ -15,7 +15,7 @@ btn.addEventListener("click", function(){
     let username = (nameInput.value + " " + surnameInput.value);
    
     
-    if ( Number.isFinite(distanceValue) && Number.isFinite(etaValue) && (distanceValue >= 1) && (etaValue > 0)){
+    if ( Number.isFinite(distanceValue) && Number.isFinite(etaValue) && (distanceValue >= 1) && (etaValue > 0) && (nameInput.value != "") && (surnameInput.value != "")){
         
         ticket.classList.remove("d-none");
         error1.classList.add("d-none");
@@ -71,7 +71,7 @@ btn.addEventListener("click", function(){
         error2.classList.remove("d-none");
         errorContainer.classList.remove("d-none");
         console.log=("errore");
-        document.getElementById("priceError").innerHTML = `accertati di aver selezionato sia la tariffa che il chilometraggio, grazie`;
+        document.getElementById("priceError").innerHTML = `accertati di aver selezionato tutto, grazie`;
         document.getElementById("scontoError").innerHTML = ` error 404 `
     }
 

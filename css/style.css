@@ -12,21 +12,34 @@ body {
 }
 
 h1 {
-    background: red;
+    margin: 0 auto;
+    width: 85%;
+    max-width: 960px;
+    background: rgb(166, 0, 0);
+    text-align: center;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
 }
 
 .container {
     padding: 1.5rem;
     background-color: rgb(166, 0, 0);
-    border-radius: 3rem;
+    border-radius: 1rem;
     margin-bottom: 3rem;
 }
 
 .card {
     color:#222;
-    
+    background: url("https://www.confartigianato.it/wp-content/uploads/2016/06/trenitalia-uai-800x342.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
+    border: solid black 2px;
 }
 
 .styleTable{
-    background-color: rgba(0, 0, 0, 0.327);
+    background-color: rgba(255, 255, 255, 0.327);
+    border-radius: 0.5rem;
+    
 }
