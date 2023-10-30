@@ -23,7 +23,7 @@ btn.addEventListener("click", function(){
         errorContainer.classList.add("d-none");
 
         let prezzo = (distanceValue * 0.21 );
-        document.getElementById("nameTicket").innerHTML = `${username} `;
+        document.getElementById("nameTicket").innerHTML = `${username.toUpperCase()} `;
         document.getElementById("price").innerHTML = `${prezzo.toFixed(2)} $`;
     
         let discount20 = (prezzo - (prezzo/100*20));
