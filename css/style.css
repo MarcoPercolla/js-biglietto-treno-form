@@ -6,7 +6,7 @@
 
 body {
     font-family: sans-serif;
-    background: #222;
+    
     color: white;
     padding: 1rem;
 }
@@ -25,7 +25,7 @@ h1 {
     padding: 1.5rem;
     background-color: rgb(166, 0, 0);
     border-radius: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 0.5rem;
 }
 
 .card {
@@ -39,7 +39,7 @@ h1 {
 }
 
 .styleTable{
-    background-color: rgba(255, 255, 255, 0.327);
+    background-color: rgba(255, 255, 255, 0.466);
     border-radius: 0.5rem;
     
 }
@@ -48,5 +48,13 @@ h1 {
     background: url(https://files.brumbrum.it/blog/wp-content/uploads/2020/02/10130045/Passaggio-a-livello.jpg);
     background-size: cover;
     background-position: center;
+    border: solid 5px black;
 
 }
+
+td{
+    font-weight: bolder;
+}
+
+
+
