@@ -62,8 +62,8 @@ btn.addEventListener("click", function(){
         error2.classList.remove("d-none");
         errorContainer.classList.remove("d-none");
         console.log=("errore");
-        document.getElementById("priceError").innerHTML = `seleziona una distanza valida`;
-        document.getElementById("scontoError").innerHTML = ` errore distanza inferiore a 1 `
+        document.getElementById("priceError").innerHTML = `Seleziona una distanza valida`;
+        document.getElementById("scontoError").innerHTML = `Errore distanza inferiore a 1 `
 
     } else {
         ticket.classList.add("d-none");
@@ -71,8 +71,8 @@ btn.addEventListener("click", function(){
         error2.classList.remove("d-none");
         errorContainer.classList.remove("d-none");
         console.log=("errore");
-        document.getElementById("priceError").innerHTML = `accertati di aver selezionato tutto, grazie`;
-        document.getElementById("scontoError").innerHTML = ` error 404 `
+        document.getElementById("priceError").innerHTML = `Accertati di aver selezionato tutto, grazie`;
+        document.getElementById("scontoError").innerHTML = `Error 404 `
     }
 
 
