@@ -11,6 +11,12 @@ body {
     padding: 1rem;
 }
 
+main {
+    background-color: #222;
+    padding: 2rem;
+    border-radius: 0.2rem;
+}
+
 h1 {
     margin: 0 auto;
     width: 85%;
