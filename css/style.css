@@ -21,3 +21,12 @@ h1 {
     border-radius: 3rem;
     margin-bottom: 3rem;
 }
+
+.card {
+    color:#222;
+    
+}
+
+.styleTable{
+    background-color: rgba(0, 0, 0, 0.327);
+}
